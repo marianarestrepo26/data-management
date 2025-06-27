@@ -202,8 +202,8 @@ body {
 }
 
 .results-display {
-    background: #2c3e50;
-    color: #ecf0f1;
+    background: var(--auxiliary-color);
+    color: var(--text-color-secondary);
     padding: 20px;
     border-radius: 8px;
     font-family: 'Courier New', monospace;
