@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="header-content-title">Product Management System</h1>
+            </div>
+        </header>
+        <section class="controls-section">
+            <div class="card">
+                <h2 class="card-title">Control Panel</h2>
+                <div class="control-row">
+                    <div class="input-group">
+                        <label for="search">Search:</label>
+                        <input type="text" id="search" placeholder="Search products...">
+                    </div>
+                    <div class="input-group">
+                        <label for="category-filter"> Filter:</label>
+                        <select id="category-filter">
+                            <option value="">All categories</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="add-product-form">
+                    <h3>Add new product</h3>
+                    <div class="form-row">
+                        <input type="text" id="product-name" placeholder="Product name">
+                        <input type="number" id="product-price" placeholder="Price">
+                        <select id="product-category">
+                            <option value="">Select category</option>
+                            <option value="Meats">Meats</option>
+                            <option value="Grain">Grain</option>
+                            <option value="Fruit">Fruit</option>
+                            <option value="Sweets">Sweets</option>
+                        </select>
+                        <button id="add-product-btn" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="data-structures">
+            <div class="structures-grid">
+                <div class="card structure-card object-card">
+                    <div class="card-header">
+                        <h2 class="card-title">Objects</h2>
+                        <span class="counter" id="object-counter">0 items</span>
+                    </div>
+                    <div class="data-display" id="objects-display">
+                    </div>
+                </div>
+                <div class="card structure-card set-card">
+                    <div class="card-header">
+                        <h2 class="card-title">Items</h2>
+                        <span class="counter" id="set-counter">0 items</span>
+                    </div>
+                    <div class="data-display" id="sets-display">
+                    </div>
+                </div>
+                <div class="card structure-card map-card">
+                    <div class="card-header">
+                        <h2 class="card-title">Categories</h2>
+                        <span class="counter" id="map-counter">0 items</span>
+                    </div>
+                    <div class="data-display" id="maps-display">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="iteration-section">
+            <div class="card">
+                <h2 class="card-title">View products</h2>
+                <div class="iteration-buttons">
+                    <button id="demo-for-in" class="btn btn-object">Objects</button>
+                    <button id="demo-for-of" class="btn btn-set">Sets</button>
+                    <button id="demo-foreach" class="btn btn-map">Maps</button>
+                </div>
+                <div id="iteration-results" class="results-display">
+                    <p>Select a method to view products</p>
+                </div>
+            </div>
+        </section>
+        <section id="code-section" class="code-section" style="display: none;">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">💻 Código Generado (gestion_datos.js)</h2>
+                    <button id="close-code-btn" class="btn btn-secondary">✖️ Cerrar</button>
+                </div>
+                <pre id="code-display" class="code-block"></pre>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="statistics-section">
+            <div class="card">
+                <h2 class="card-title">System Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" id="total-products">0</div>
+                        <div class="stat-label">Products Objects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="unique-products">0</div>
+                        <div class="stat-label">Products Set</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="total-categories">0</div>
+                        <div class="stat-label">Products Map</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>© Mariana Restrepo Acevedo 2025</p>
+        </footer>
+    </div>
+    <script src="gestion_datos.js"></script>
+</body>
+</html>
