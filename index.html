@@ -20,13 +20,7 @@
                     <div class="input-group">
                         <label for="search">Search:</label>
                         <input type="text" id="search" placeholder="Search products...">
-                    </div>
-                    <div class="input-group">
-                        <label for="category-filter"> Filter:</label>
-                        <select id="category-filter">
-                            <option value="">All categories</option>
-                        </select>
-                    </div>
+                    </div>        
                 </div>
                 <div class="add-product-form">
                     <h3>Add new product</h3>
@@ -53,51 +47,26 @@
                         <h2 class="card-title">Objects</h2>
                         <span class="counter" id="object-counter">0 items</span>
                     </div>
-                    <div class="data-display" id="objects-display">
-                    </div>
+                    <div class="data-display" id="objects-display"></div>
                 </div>
                 <div class="card structure-card set-card">
                     <div class="card-header">
                         <h2 class="card-title">Items</h2>
                         <span class="counter" id="set-counter">0 items</span>
                     </div>
-                    <div class="data-display" id="sets-display">
-                    </div>
+                    <div class="data-display" id="sets-display"></div>
                 </div>
                 <div class="card structure-card map-card">
                     <div class="card-header">
                         <h2 class="card-title">Categories</h2>
                         <span class="counter" id="category-counter">0 items</span>
                     </div>
-                    <div class="data-display" id="category-display">
-                    </div>
+                    <div class="data-display" id="category-display"></div>
                 </div>
             </div>
         </section>
-        <!-- <section class="iteration-section">
-            <div class="card">
-                <h2 class="card-title">View products</h2>
-                <div class="iteration-buttons">
-                    <button id="demo-for-in" class="btn btn-object">Objects</button>
-                    <button id="demo-for-of" class="btn btn-set">Sets</button>
-                    <button id="demo-foreach" class="btn btn-map">Maps</button>
-                </div>
-                <div id="iteration-results" class="results-display">
-                    <p>Select a method to view products</p>
-                </div>
-            </div>
-        </section> -->
         <section id="code-section" class="code-section" style="display: none;">
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">💻 Código Generado (gestion_datos.js)</h2>
-                    <button id="close-code-btn" class="btn btn-secondary">✖️ Cerrar</button>
-                </div>
-                <pre id="code-display" class="code-block"></pre>
-            </div>
         </section>
-
-        <!-- Statistics -->
         <section class="statistics-section">
             <div class="card">
                 <h2 class="card-title">System Statistics</h2>
@@ -121,6 +90,6 @@
             <p>© Mariana Restrepo Acevedo 2025</p>
         </footer>
     </div>
-    <script src="gestion_datos.js"></script>
+    <script src="./dataManagement.js"></script>
 </body>
 </html>
