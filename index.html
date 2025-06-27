@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Management</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/img/icon-page.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
     <div class="container">
+        <!-- Encabezado principal -->
         <header class="header">
             <div class="header-content">
                 <h1 class="header-content-title">Product Management System</h1>
             </div>
         </header>
+        <!-- Panel de control y formulario para agregar productos -->
         <section class="controls-section">
             <div class="card">
                 <h2 class="card-title">Control Panel</h2>
@@ -24,6 +27,7 @@
                 </div>
                 <div class="add-product-form">
                     <h3>Add new product</h3>
+                    <!-- Campos para agregar producto -->
                     <div class="form-row">
                         <input type="text" id="product-name" placeholder="Product name" value="">
                         <input type="text" id="product-price" placeholder="Price">
@@ -39,7 +43,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
+        <!-- Sección para mostrar estructuras de datos -->                               
         <section class="data-structures">
             <div class="structures-grid">
                 <div class="card structure-card object-card">
@@ -65,8 +70,7 @@
                 </div>
             </div>
         </section>
-        <section id="code-section" class="code-section" style="display: none;">
-        </section>
+        <!-- Sección de estadísticas del sistema -->
         <section class="statistics-section">
             <div class="card">
                 <h2 class="card-title">System Statistics</h2>
@@ -90,6 +94,6 @@
             <p>© Mariana Restrepo Acevedo 2025</p>
         </footer>
     </div>
-    <script src="./dataManagement.js"></script>
+    <script src="./assets/JavaScript/dataManagement.js"></script>
 </body>
 </html>
